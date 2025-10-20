@@ -13,7 +13,7 @@ COPY . .
 RUN make build-linux
 
 # Final image
-FROM golang:1.14 as final
+FROM golang:1.25.3 as final
 
 WORKDIR /okexchaind
 # Copy over binaries from the build-env
